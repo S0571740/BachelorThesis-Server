@@ -13,7 +13,6 @@ const app = express();
 
 
 app.use(express.json());
-app.set('trust proxy', 1);
 app.use(
 	cors({
 		origin: ["http://localhost:5500","http://loquacious-cat-52d8b6.netlify.app"],
@@ -33,3 +32,8 @@ app.post("/login", async (req, res) => {
 	// 	return res.status(401).send("wrong password");
 	// }
 });
+
+app.get("/test", async (req, res) => {
+    let user = await client.findOne();
+	return res.send(user);
+})
