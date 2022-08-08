@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/S0571740/BachelorThesis-Server#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "mongodb": "^4.8.1"
   }
