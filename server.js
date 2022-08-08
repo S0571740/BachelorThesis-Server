@@ -17,7 +17,6 @@ app.set('trust proxy', 1);
 app.use(
 	cors({
 		origin: ["http://localhost:5500","http://loquacious-cat-52d8b6.netlify.app"],
-		credentials: true,
 	})
 );
 
